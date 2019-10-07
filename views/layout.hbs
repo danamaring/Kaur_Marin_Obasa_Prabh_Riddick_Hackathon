@@ -4,26 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{!-- link - stylesheets --}}
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Welcome to node with express</title>
+
+
+    {{!-- link - icons --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css">
+
+    {{!-- link - fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+    {{!-- link - favicon --}}
+     <link rel="shortcut icon" type="image/png" href="images/thermoSecurity_favicon.png"/>
+
+
+    <title>ThermoSecurity by HouseCom</title>
 </head>
+
+{{!-- body starts --}}
 <body>
-    <h1>Node is no big thing!</h1>
-    <p>some text here</p>
+    {{!-- header starts --}}
+    <header>
+        <h1 class="hidden">Header starts</h1>
 
-    {{!-- this is a placeholder tag - exress will render templates / partials here --}}
+        {{!-- logo header --}}
+        <div id="logoHeader">
+            <img src="images/logo_housecom.svg" alt="houseCom logo">
+        </div>
 
-   
-    
-    <ul>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/users">Users</a></li>
-    </ul>
+        {{!-- menu starts --}}
+        <nav>
+            <h2 class="hidden">Main Navigation</h2>
+            <button id="button"></button>
 
-    <h1>Fanshawe and its Profs</h1>
-     {{{ body }}}
+            {{!-- menu content --}}
+            <div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
 
+                {{!-- social media icons menu --}}
+                <div id="socialIcons_header">
+                    <img src="images/twitter_icon.svg" alt="Twitter icon">
+                    <img src="images/pinterest_icon.svg" alt="Pinterest icon">
+                    <img src="images/amazon_icon.svg" alt="Amazon icon">
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    {{!-- Hero section --}}
+    <section>
+        <h1 class="hidden">Hero Section</h1>
+
+        <h1 id="heroHeading">HouseCom</h1> 
+        <img id="productHero" src="images/ecobee_provisional.jpg" alt="ThermoSecurity device">
+        <button class="buyNowButton">Buy now</button>
+    </section>
+
+    {{!-- Features section --}}
+    <section>
+        <h1 class="hidden">Main product features</h1>
+
+        <img src="images/apartment_section.jpg" alt="Apartment image">
+        <h1 id="featuresHeading">Main features</h1>
+        <div id="featuresSection">
+            <div id="featuresTemperature">
+                <i class="fas fa-temperature-high"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                </p>
+            </div>
+
+            {{!-- features  description --}}
+            <div id="featuresTime">
+                <i class="far fa-clock"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                </p>
+            </div>
+
+            <div id="featuresWeather">
+                <i class="fas fa-cloud"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                </p>
+            </div>
+
+            <div id="featuresSecurity">
+               <i class="fas fa-shield-alt"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                </p>
+            </div>
+
+            <div id="featuresAlexa">
+                <i class="fas fa-wifi"></i>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {{!-- security section --}}
+    <section>
+        <h1 class="hidden">ThermoSecure Safe Feature</h1>
+        <img src="images/keepThemSafe.png" alt="Happy family and home camera">
+        <h1 class="mainTitles">A smart way to keep them safe</h1>
+         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+     </section>
+
+    {{!-- facial recognition section --}}
+    <section>
+        <h1 class="hidden">Facial Recognition Section</h1>
+         <img src="images/ecobee_provisional2.jpg" alt="ThremoSecurity Device">
+         <h1 class="mainTitles">ThermoSecurity Knows You</h1>
+         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+         <button class="buyNowButton">Buy now</button>
+     </section>
+
+    {{!-- Alexa section --}}
+    <section id="alexaSection">
+        <h1 class="hidden">Alexa Section</h1>
+         <img src="images/amazon_echo.png" alt="Amazon Echo device">
+         <h1 class="mainTitles">The Smartphone of Smartphones</h1>
+         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+         <img src="images/logo_alexaAmazon.png" alt="Alexa Amazon logo">
+     </section>
+
+    {{!-- Mobile capabilities section --}}
+    <section>
+        <h1 class="hidden">Mobile capabilities section</h1>
+         <img src="images/phone_mockup_provisional.png" alt="Phone mockup">
+         <h1 class="mainTitles">Mobile Capabilities</h1>
+         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+         <div>
+             <img src="images/android_logo.png" alt="Android Logo">
+             <img src="images/ios_logo.png" alt="IOS Logo">
+         </div>
+     </section>
+
+     {{!-- Order ThermoSecure today section --}}
+    <section>
+        <h1 class="hidden">Order ThermoSecure today section</h1>
+         <img src="images/boxes_mockup_provisional.png" alt="Packaging mockup">
+         <h1 class="mainTitles">Order ThermoSecure today</h1>
+         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+        <button class="buyNowButton">Buy now</button>
+     </section>
+
+    {{!-- Footer starts --}}
+    <footer>
+        <h1 class="hidden">Main Footer</h1>
+
+        <img src="logo_housecom.svg" alt="HouseCom Logo">
+
+        {{!-- footer navbar --}}
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        {{!-- info section footer --}}
+        <section id="infoSectionFooter">
+            <h1 class="hidden">Information section footer</h1>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <h1>138 Dundas St. London. ON</h1>
+            </div>
+
+            <div>
+                <i class="fas fa-phone"></i>
+                <h1>519-647-5589</h1>
+            </div>
+
+            <div>
+                <i class="fas fa-envelope"></i>
+                <h1>thermosecurity@housecom.com</h1>
+            </div>
+
+            <div>
+                <i class="far fa-clock"></i>
+                <h1>Customer hours: 9:00 to 5:00</h1>
+            </div>
+        </section>
+
+        {{!-- social media icons footer --}}
+        <div id="socialMediaFooter">
+            <img src="images/twitter_icon.svg" alt="Twitter icon">
+            <img src="images/pinterest_icon.svg" alt="Pinterest icon">
+            <img src="images/amazon_icon.svg" alt="Amazon icon">
+        </div>
+
+        {{!-- copyrights footer --}}
+        <div id="footerCopyrights">
+            <h1>Copyrights c Copyrights</h1>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
