@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 
       console.log(rows);
 
-      res.render('home', rows[0])
+      res.render('layout', rows[0])
     })
   })
 })
