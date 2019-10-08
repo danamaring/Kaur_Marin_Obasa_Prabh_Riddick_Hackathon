@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap" rel="stylesheet">
 
     {{!-- link - favicon --}}
-     <link rel="shortcut icon" type="image/png" href="images/thermoSecurity_favicon.png"/>
+     <link rel="shortcut icon" type="image/png" href="images/thermosecure_logo-v1_favicon.png"/>
 
 
     <title>ThermoSecurity by HouseCom</title>
@@ -32,7 +32,8 @@
 
         {{!-- logo header --}}
         <div id="logoHeader">
-            <img src="images/logo_housecom.svg" alt="houseCom logo">
+            <img id="monoLogo" src="images/thermosecure_logo-v2_text_right-greyscale.svg" alt="houseCom logo">
+            <img id="colourLogo" src="images/thermosecure_logo-v2_text_right.svg" alt="houseCom logo">
         </div>
 
         {{!-- menu starts --}}
@@ -48,13 +49,41 @@
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
 
-                {{!-- social media icons menu --}}
+            {{!-- info section header --}}
+                <section id="infoSectionHeader">
+                    <h1 class="hidden">Information section footer</h1>
+                    <div id="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h1>138 Dundas St. London. ON</h1>
+                    </div>
+
+                    <div id="phone">
+                        <i class="fas fa-phone"></i>
+                        <h1>519-647-5589</h1>
+                    </div>
+
+                    <div id="email">
+                        <i class="fas fa-envelope"></i>
+                        <h1>thermosecurity@housecom.com</h1>
+                    </div>
+
+                    <div id="hours">
+                        <i class="fas fa-clock"></i>
+                        <h1>Customer hours: 9:00 to 5:00</h1>
+                    </div>
+                </section>
+
+            {{!-- social media icons menu --}}
                 <div id="socialIcons_header">
                     <img src="images/twitter_icon.svg" alt="Twitter icon">
                     <img src="images/pinterest_icon.svg" alt="Pinterest icon">
                     <img src="images/amazon_icon.svg" alt="Amazon icon">
                 </div>
+
+                
             </div>
+
+            
         </nav>
 
         {{!-- Hero section --}}
@@ -152,6 +181,7 @@
      {{!-- Order ThermoSecure today section --}}
     <section>
         <h1 class="hidden">Order ThermoSecure today section</h1>
+
          <img src="images/boxes_mockup_provisional.png" alt="Packaging mockup">
          <h1 class="mainTitles">{{P_TITLE}}</h1>
          <p class="mainText">{{P_BODY}}</p>
@@ -159,13 +189,13 @@
      </section>
 
     {{!-- Footer starts --}}
-    <footer>
+    <footer id="mainFooter">
         <h1 class="hidden">Main Footer</h1>
 
-        <img src="images/logo_housecom.svg" alt="HouseCom Logo">
+        <img id="logoFooter" src="images/thermosecure_logo-v2_text_right-knockout.svg" alt="HouseCom Logo">
 
         {{!-- footer navbar --}}
-        <nav>
+        <nav id="navbarFooter">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -176,6 +206,7 @@
         {{!-- info section footer --}}
         <section id="infoSectionFooter">
             <h1 class="hidden">Information section footer</h1>
+
             <div>
                 <i class="fas fa-map-marker-alt"></i>
                 <h1>{{ADDRESS}}</h1>
@@ -203,6 +234,13 @@
             <img src="images/pinterest_icon.svg" alt="Pinterest icon">
             <img src="images/amazon_icon.svg" alt="Amazon icon">
         </div>
+
+        {{!-- back to top button --}}
+        <div id="backToTop">
+			<a href="#">
+				<img src="images/arrow-circle-up-solid.svg" alt="back to top icon">
+			</a>
+		</div>
 
         {{!-- copyrights footer --}}
         <div id="footerCopyrights">

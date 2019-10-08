@@ -5,9 +5,12 @@ header {
   background-color: #2d36b3; }
 
 #logoHeader img {
-  width: 23%;
+  width: 49%;
   height: auto;
   padding: 5%; }
+
+#colourLogo {
+  display: none; }
 
 #button {
   background-image: url(../images/bars-solid.svg);
@@ -31,7 +34,7 @@ header {
 
 #burgerCon.slideToggle {
   display: block;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.85); }
 
 #mainNav button {
   border: 0;
@@ -48,8 +51,9 @@ header {
   display: block;
   color: white;
   text-align: left;
-  margin: 5% 0;
+  margin: 5% 5% 0 5%;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   font-size: 1em;
   text-decoration: none;
   cursor: pointer; }
@@ -70,6 +74,85 @@ header {
 
 #socialMediaHeader img:first-child {
   margin-left: 12%; }
+
+#socialIcons_header {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  padding: 5%;
+  margin-left: 62%; }
+
+#socialIcons_header img {
+  width: 1em;
+  padding: 6%; }
+
+#infoSectionFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  margin-left: 5%;
+  margin-top: 40%; }
+
+#address {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  margin-left: 3%;
+  margin-top: 40%; }
+
+#address i {
+  font-size: 1.5em; }
+
+#address h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 2%; }
+
+#phone {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  margin-left: 3%; }
+
+#phone i {
+  font-size: 1.5em; }
+
+#phone h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 2%; }
+
+#email {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  margin-left: 3%; }
+
+#email i {
+  font-size: 1.5em; }
+
+#email h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 2%; }
+
+#hours {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  margin-left: 3%; }
+
+#hours i {
+  font-size: 1.5em; }
+
+#hours h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 2%; }
 
 #heroHeading {
   font-family: "Varela Round", sans-serif;
@@ -104,13 +187,15 @@ header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   cursor: pointer;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44)); }
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
+  border: none; }
 
 #featuresImage {
-  background-image: url(../images/apartment_section.jpg);
+  background-image: url(../images/apartment_section_mobile.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 200px; }
+  height: 300px; }
 
 #featuresSection {
   display: flex;
@@ -162,7 +247,8 @@ header {
 
 #securitySection img {
   width: 95%;
-  height: auto; }
+  height: auto;
+  margin-top: 13%; }
 
 .mainTitles {
   font-family: "Varela Round", sans-serif;
@@ -180,11 +266,20 @@ header {
   line-height: 1.3em;
   text-align: justify; }
 
+.mainTextCenter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: black;
+  margin: 5%;
+  line-height: 1.3em;
+  text-align: justify; }
+
 #facialRecognitionSection img {
   width: 51%;
   height: auto;
   transform: scaleX(-1);
-  margin-left: -8%; }
+  margin-left: -8%;
+  margin-top: 14%; }
 
 .facialTitle {
   font-family: "Varela Round", sans-serif;
@@ -220,7 +315,8 @@ header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   cursor: pointer;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44)); }
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
+  border: none; }
 
 #alexaSection {
   background-color: #2d36b3; }
@@ -236,7 +332,7 @@ header {
 .mainTitlesWhite {
   font-family: "Varela Round", sans-serif;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 22%;
   font-size: 1.5em;
   color: white;
   line-height: 1.5em;
@@ -252,23 +348,506 @@ header {
   width: 62%; }
 
 #alexaLogo {
-  width: 75%;
+  width: 42%;
   height: auto;
   margin-left: 50%;
-  margin-top: -5%; }
+  margin-top: -5%;
+  margin-bottom: 5%; }
 
 #capabilitiesIMG {
   width: 60%;
   margin-left: 20%;
-  margin-top: 15%; }
+  margin-top: 18%; }
 
 #osLogos {
   display: flex;
   flex-direction: row;
-  margin-left: 20%; }
+  margin-left: 5%; }
 
 #osLogos img {
   padding: 5%;
   width: 37%; }
+
+#orderTodayIMG {
+  width: 100%;
+  margin-top: 11%; }
+
+.orderTodayTitle {
+  font-family: "Varela Round", sans-serif;
+  margin-top: -10%;
+  font-size: 2em;
+  color: #2d36b3;
+  line-height: 1.5em;
+  text-align: center; }
+
+.OrderBuyNowButton {
+  padding: .3em;
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  background-color: #2d36b3;
+  width: 24%;
+  margin-left: 38%;
+  margin-top: 4%;
+  margin-bottom: 8%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
+  border: none; }
+
+#mainFooter {
+  background-color: black;
+  margin-top: 12%; }
+
+#navbarFooter {
+  display: none; }
+
+#infoSectionFooter {
+  display: none; }
+
+#socialMediaFooter {
+  display: none; }
+
+#logoFooter {
+  width: 49%;
+  margin-left: 9%;
+  margin-top: 5%;
+  cursor: pointer; }
+
+#footerCopyrights {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.2em;
+  color: white;
+  margin-top: 6%;
+  padding-bottom: 3%; }
+
+#backToTop img {
+  width: 2em;
+  position: absolute;
+  margin-top: -14%;
+  margin-left: 80%; }
+
+@media screen and (min-width: 48em) {
+  #mainNav button {
+    border: 0;
+    width: 51px;
+    height: 51px;
+    margin-left: 87%; }
+
+  #heroHeading {
+    font-size: 4em; }
+
+  #heroDescription {
+    font-size: 1em;
+    width: 59%; }
+
+  .buyNowButton {
+    font-size: 1em;
+    width: 18%; }
+
+  #featuresImage {
+    height: 400px; }
+
+  #featuresSection {
+    display: flex;
+    flex-direction: row; }
+
+  #featuresTemperature {
+    width: 35%; }
+
+  #featuresTime {
+    width: 35%; }
+
+  #featuresWeather {
+    width: 35%; }
+
+  #featuresSecurity {
+    width: 35%; }
+
+  #featuresAlexa {
+    width: 35%;
+    margin-left: 24%; }
+
+  #featuresSection {
+    margin-left: 14%; }
+
+  .mainTitles {
+    font-size: 4em; }
+
+  .mainText {
+    font-size: 1em;
+    width: 70%; }
+
+  .facialTitle {
+    font-size: 2.8em; }
+
+  .facialText {
+    font-size: 1em; }
+
+  .buyNowButtonBlue {
+    font-size: 1em;
+    width: 17%;
+    position: absolute;
+    margin-top: 56%;
+    margin-left: 9%; }
+
+  #alexaIMG {
+    margin-top: -9%; }
+
+  .mainTitlesWhite {
+    font-size: 3.5em; }
+
+  .mainTextWhite {
+    font-size: 1em; }
+
+  #alexaLogo {
+    width: 33%;
+    margin-top: -2%; }
+
+  #osLogos {
+    margin-left: 0%; }
+
+  .orderTodayTitle {
+    font-size: 4em; }
+
+  .mainTextCenter {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1em;
+    margin: 5%;
+    line-height: 1.3em;
+    text-align: justify;
+    margin-left: 16%;
+    width: 66%; }
+
+  .OrderBuyNowButton {
+    font-size: 1em;
+    width: 21%;
+    padding: 0.5em; }
+
+  #backToTop img {
+    font-size: 2em; }
+
+  #footerCopyrights {
+    font-size: 0.8em; }
+
+  #osLogos img {
+    width: 20%; }
+
+  #mainNav li a {
+    font-size: 1.6em; }
+
+  #burgerMenu {
+    margin-left: 2%;
+    margin-top: 12%; }
+
+  #address {
+    margin-top: 26%; } }
+@media screen and (min-width: 64em) {
+  header {
+    background: linear-gradient(90deg, white 50%, #2d36b3 50%); }
+
+  #colourLogo {
+    display: block;
+    width: 25%;
+    height: auto;
+    padding: 4%; }
+
+  #monoLogo {
+    display: none; }
+
+  #mainHeader {
+    display: flex;
+    margin-top: 5%; }
+
+  #button {
+    display: none; }
+
+  #burgerCon {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+
+  #mainNav {
+    text-align: right;
+    font-size: 0.875em;
+    margin-left: auto;
+    background-color: transparent; }
+
+  #burgerMenu {
+    margin-top: -9%;
+    margin-right: 23%; }
+
+  #mainNav li {
+    display: inline;
+    margin-left: 20px;
+    border-bottom: none; }
+
+  #mainNav li a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    font-size: 0.8em; }
+
+  #logoHeader img {
+    width: 25%;
+    height: auto;
+    padding: 4%; }
+
+  #infoSectionHeader {
+    display: none; }
+
+  #socialIcons_header {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-left: 81%;
+    margin-top: -8%; }
+
+  #productHero {
+    width: 53%;
+    margin-top: -13%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
+    position: absolute;
+    margin-left: 34%; }
+
+  #heroHeading {
+    margin-top: 6%;
+    color: black;
+    font-size: 3em; }
+
+  #heroDescription {
+    width: 30%;
+    color: black; }
+
+  .buyNowButton {
+    width: 12%;
+    background-color: #2d36b3;
+    color: white; }
+
+  #socialIcons_header img {
+    padding: 3%; }
+
+  #heroDescription {
+    font-size: 0.8em; }
+
+  #featuresImage {
+    background-image: url(../images/apartment_section.jpg);
+    background-position: left;
+    background-repeat: no-repeat; }
+
+  #featuresTemperature {
+    width: 22%; }
+
+  #featuresTime {
+    width: 22%; }
+
+  #featuresWeather {
+    width: 22%; }
+
+  #featuresAlexa {
+    margin-left: 0; }
+
+  #securitySection img {
+    width: 66%;
+    margin-top: 8%; }
+
+  .mainTitles {
+    font-size: 3em;
+    position: absolute;
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -41%; }
+
+  .mainText {
+    font-size: 1em;
+    width: 30%;
+    margin-left: 61%;
+    position: absolute;
+    margin-top: -24%; }
+
+  #facialRecognitionSection img {
+    width: 40%;
+    height: auto;
+    margin-left: 67%;
+    margin-top: 11%;
+    transform: none; }
+
+  .facialTitle {
+    font-family: "Varela Round", sans-serif;
+    margin-left: 9%;
+    width: 36%;
+    margin-top: -40%;
+    color: #2d36b3;
+    line-height: 1.5em;
+    position: absolute; }
+
+  .facialText {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 1.3em;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 9%;
+    margin-right: 61%; }
+
+  #alexaIMG {
+    width: 52%;
+    margin-left: -1%; }
+
+  .mainTitlesWhite {
+    font-family: "Varela Round", sans-serif;
+    margin-left: 46%;
+    color: white;
+    line-height: 1.5em;
+    padding-top: 12%; }
+
+  .mainTextWhite {
+    margin-left: 47%;
+    width: 39%;
+    margin-top: 3%; }
+
+  .buyNowButtonBlue {
+    margin-top: -10%;
+    width: 13%; }
+
+  #alexaLogo {
+    width: 23%;
+    margin-top: -2%;
+    margin-left: 46%;
+    margin-bottom: 3%; }
+
+  #capabilitiesIMG {
+    width: 47%;
+    margin-left: 9%;
+    margin-top: 12%; }
+
+  #osLogos {
+    margin-left: 59%;
+    margin-top: -10%; }
+
+  #orderTodayIMG {
+    width: 62%;
+    margin-top: 11%;
+    margin-left: 42%; }
+
+  .orderTodayTitle {
+    font-size: 3em;
+    width: 56%;
+    margin-top: -42%; }
+
+  .mainTextCenter {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1em;
+    margin: 5%;
+    text-align: justify;
+    margin-left: 8%;
+    width: 36%;
+    margin-top: 4%; }
+
+  .OrderBuyNowButton {
+    font-size: 1em;
+    width: 15%;
+    padding: 0.5em;
+    margin-left: 8%;
+    margin-top: 0%; }
+
+  #mainFooter {
+    margin-top: 5%; }
+
+  #logoFooter {
+    width: 29%;
+    margin-left: 6%;
+    margin-top: 4%;
+    cursor: pointer; }
+
+  #backToTop {
+    display: none; }
+
+  #infoSectionFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin-left: 5%;
+    margin-top: 40%; }
+
+  #infoSectionFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin-left: 5%;
+    margin-top: 40%; }
+
+  #addressF {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2% 0 2%;
+    margin-left: 3%;
+    margin-top: 0%; }
+
+  #addressF i {
+    font-size: 1.5em; }
+
+  #addressF h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%; }
+
+  #phoneF {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2% 0 2%;
+    margin-left: 3%; }
+
+  #phoneF i {
+    font-size: 1.5em; }
+
+  #phoneF h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%; }
+
+  #emailF {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2% 0 2%;
+    margin-left: 3%; }
+
+  #emailF i {
+    font-size: 1.5em; }
+
+  #emailF h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%; }
+
+  #hoursF {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2% 0 2%;
+    margin-left: 3%; }
+
+  #hoursF i {
+    font-size: 1.5em; }
+
+  #hoursF h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%; }
+
+  #infoSectionFooter {
+    margin-top: 0;
+    padding: 10% 5% 0 1%; } }
 
 /*# sourceMappingURL=main.css.map */
