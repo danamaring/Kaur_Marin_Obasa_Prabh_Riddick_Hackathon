@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 08, 2019 at 04:03 AM
+-- Generation Time: Oct 08, 2019 at 09:43 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -74,6 +74,11 @@ DROP TABLE IF EXISTS `tbl_features`;
 CREATE TABLE IF NOT EXISTS `tbl_features` (
   `FEATURE_ID` int(11) NOT NULL AUTO_INCREMENT,
   `F_TITLE` varchar(30) NOT NULL,
+  `ICON1` text NOT NULL,
+  `ICON2` text NOT NULL,
+  `ICON3` text NOT NULL,
+  `ICON4` text NOT NULL,
+  `ICON5` text NOT NULL,
   PRIMARY KEY (`FEATURE_ID`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
@@ -81,8 +86,8 @@ CREATE TABLE IF NOT EXISTS `tbl_features` (
 -- Dumping data for table `tbl_features`
 --
 
-INSERT INTO `tbl_features` (`FEATURE_ID`, `F_TITLE`) VALUES
-(1, 'Hot Features');
+INSERT INTO `tbl_features` (`FEATURE_ID`, `F_TITLE`, `ICON1`, `ICON2`, `ICON3`, `ICON4`, `ICON5`) VALUES
+(1, 'Hot Features', 'Thermostat – Regulate and control the temperature in your house, including those hard to reach hot and cold spots with programmable sensors', 'Snowflake – Regulates indoor humidity levels to prevent frost buildup on outside windows', 'Clouds – View the daily, hourly, and weekly forecast all from one streamlined location', 'Alexa – Turn your home into a smart home with built-in support of Amazon’s own voice-controlled AI, Alexa', 'Security – Check motion sensors, cameras, and more right from your pocket. Open windows, unlock doors, and even test for Carbon Monoxide and smoke');
 
 -- --------------------------------------------------------
 
