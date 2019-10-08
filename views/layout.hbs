@@ -15,7 +15,7 @@
 
     {{!-- link - fonts --}}
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap" rel="stylesheet">
 
     {{!-- link - favicon --}}
      <link rel="shortcut icon" type="image/png" href="images/thermoSecurity_favicon.png"/>
@@ -36,13 +36,13 @@
         </div>
 
         {{!-- menu starts --}}
-        <nav>
+        <nav id="mainNav">
             <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
 
             {{!-- menu content --}}
-            <div>
-                <ul>
+            <div id="burgerCon">
+                <ul id="burgerMenu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">CONTACT US</a></li>
@@ -56,59 +56,63 @@
                 </div>
             </div>
         </nav>
+
+        {{!-- Hero section --}}
+        <section>
+            <h1 class="hidden">Hero Section</h1>
+
+            <img id="productHero" src="images/ecobee_provisional2.png" alt="ThermoSecurity device">
+            <h1 id="heroHeading">HouseCom</h1> 
+            <p id="heroDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, dolorem repellendus ab magni modi provident corrupti sapiente in quisquam rerum, ea exercitationem officiis mollitia! Expedita explicabo amet nemo repellendus rerum?</p>
+            <button class="buyNowButton">BUY NOW</button>
+        </section>
     </header>
 
-    {{!-- Hero section --}}
-    <section>
-        <h1 class="hidden">Hero Section</h1>
-
-        <h1 id="heroHeading">HouseCom</h1> 
-        <img id="productHero" src="images/ecobee_provisional.jpg" alt="ThermoSecurity device">
-        <button class="buyNowButton">Buy now</button>
-    </section>
+    
 
     {{!-- Features section --}}
     <section>
         <h1 class="hidden">Main product features</h1>
 
-        <img src="images/apartment_section.jpg" alt="Apartment image">
-        <h1 id="featuresHeading">Main features</h1>
-        <div id="featuresSection">
-            <div id="featuresTemperature">
-                <i class="fas fa-temperature-high"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
-                </p>
-            </div>
+        <div id="featuresImage"></div>
 
             {{!-- features  description --}}
-            <div id="featuresTime">
-                <i class="far fa-clock"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
-                </p>
-            </div>
+            <div id="featuresSection">
 
-            <div id="featuresWeather">
-                <i class="fas fa-cloud"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
-                </p>
-            </div>
+                <div id="featuresTemperature">
+                    <i class="fas fa-temperature-high"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                    </p>
+                 </div>
+                <div id="featuresTime">
+                    <i class="fas fa-clock"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                    </p>
+                </div>
 
-            <div id="featuresSecurity">
-               <i class="fas fa-shield-alt"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
-                </p>
-            </div>
+                <div id="featuresWeather">
+                    <i class="fas fa-cloud"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                    </p>
+                </div>
 
-            <div id="featuresAlexa">
-                <i class="fas fa-wifi"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
-                </p>
-            </div>
-        </div>
+                <div id="featuresSecurity">
+                <i class="fas fa-shield-alt"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                    </p>
+                </div>
+
+                <div id="featuresAlexa">
+                    <i class="fas fa-wifi"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum harum quaerat atque sunt quod facere, voluptate, deserunt ipsum sed est.
+                    </p>
+                </div>
+
+             </div>
     </section>
 
     {{!-- security section --}}
-    <section>
+    <section id="securitySection">  
         <h1 class="hidden">ThermoSecure Safe Feature</h1>
         <img src="images/keepThemSafe.png" alt="Happy family and home camera">
         <h1 class="mainTitles">A smart way to keep them safe</h1>
@@ -116,34 +120,34 @@
      </section>
 
     {{!-- facial recognition section --}}
-    <section>
+    <section id="facialRecognitionSection">
         <h1 class="hidden">Facial Recognition Section</h1>
-         <img src="images/ecobee_provisional2.jpg" alt="ThremoSecurity Device">
-         <h1 class="mainTitles">ThermoSecurity Knows You</h1>
-         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
-         <button class="buyNowButton">Buy now</button>
+         <img src="images/ecobee_provisional.jpg" alt="ThremoSecurity Device">
+         <h1 class="facialTitle">ThermoSecurity Knows You</h1>
+         <p class="facialText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis?</p>
+         <button class="buyNowButtonBlue">BUY NOW</button>
      </section>
 
     {{!-- Alexa section --}}
     <section id="alexaSection">
         <h1 class="hidden">Alexa Section</h1>
-         <img src="images/amazon_echo.png" alt="Amazon Echo device">
-         <h1 class="mainTitles">The Smartphone of Smartphones</h1>
-         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
-         <img src="images/logo_alexaAmazon.png" alt="Alexa Amazon logo">
+         <img id="alexaIMG" src="images/amazon_echo.png" alt="Amazon Echo device">
+         <h1 class="mainTitlesWhite">The Smartphone of Smartphones</h1>
+         <p class="mainTextWhite">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error </p>
+         <img id="alexaLogo" src="images/logo_alexaAmazon.png" alt="Alexa Amazon logo">
      </section>
 
     {{!-- Mobile capabilities section --}}
     <section>
         <h1 class="hidden">Mobile capabilities section</h1>
-         <img src="images/phone_mockup_provisional.png" alt="Phone mockup">
+         <img id="capabilitiesIMG" src="images/phone_mockup_provisional.png" alt="Phone mockup">
          <h1 class="mainTitles">Mobile Capabilities</h1>
          <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
-         <div>
+         <div id="osLogos">
              <img src="images/android_logo.png" alt="Android Logo">
              <img src="images/ios_logo.png" alt="IOS Logo">
          </div>
-     </section>
+    </section>
 
      {{!-- Order ThermoSecure today section --}}
     <section>
@@ -151,14 +155,14 @@
          <img src="images/boxes_mockup_provisional.png" alt="Packaging mockup">
          <h1 class="mainTitles">Order ThermoSecure today</h1>
          <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
-        <button class="buyNowButton">Buy now</button>
+        <button class="buyNowButton">BUY NOW</button>
      </section>
 
     {{!-- Footer starts --}}
     <footer>
         <h1 class="hidden">Main Footer</h1>
 
-        <img src="logo_housecom.svg" alt="HouseCom Logo">
+        <img src="images/logo_housecom.svg" alt="HouseCom Logo">
 
         {{!-- footer navbar --}}
         <nav>
