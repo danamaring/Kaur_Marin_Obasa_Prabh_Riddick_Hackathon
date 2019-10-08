@@ -1,0 +1,335 @@
+@import "_vars";
+
+// general styling
+.hidden {
+    display: none;
+}
+
+// ----header
+
+header {
+    background-color: $dark_blue;
+}
+#logoHeader img {
+    width: 23%;
+    height: auto;
+    padding: 5%;
+}
+
+// hamburger menu
+#button {
+    background-image: url(../images/bars-solid.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: -18% 12% 0 30%;
+    position: relative;
+}
+  
+  #mainNav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    position:relative;
+}
+    
+  #mainNav button {
+    margin-left: auto;
+  }
+  
+  #burgerCon {
+    display: none;
+    margin-top: 20px;
+  }
+    
+  #burgerCon.slideToggle {
+    display: block;
+    background-color: black;
+  }
+    
+  #mainNav button {
+    border: 0;
+    width: 35px;
+    height: 35px;
+    transition: all 400ms ease;
+  }
+    
+  #mainNav button.expanded {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+    
+  #mainNav li a {
+    display: block;
+    color: white;
+    text-align: left;
+    margin: 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #burgerMenu li a:hover {
+    color: $light-blue;
+    transition: all 200ms ease-in-out;
+  }
+  
+  
+  #socialMediaHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40%;
+    margin-bottom: 5%;
+  }
+  
+  #socialMediaHeader img {
+    width: 4.5%;
+    padding: 3.5%;
+  }
+  
+  #socialMediaHeader img:first-child {
+    margin-left: 12%;
+  }
+
+  // hero title and text
+
+  #heroHeading {
+      font-family: $font-titles;
+      font-size: 2em;
+      color: white;
+      padding: 5%;
+      margin-top: -14%;
+  }
+
+  #productHero {
+      width: 95%;
+      margin-top: -22%;
+      filter: $product-shadow;
+  }
+
+  #heroDescription {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      margin-left: 5%;
+      font-size: .55em;
+       width: 70%;
+}
+
+.buyNowButton {
+    padding: .3em;
+    border-radius: 40px;
+    text-decoration: none;
+    color: $dark-blue;
+    font-size: 0.7em;
+    background-color: white;
+    width: 24%;
+    margin-left: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: $font-buttons;
+    font-weight: 400;
+    cursor: pointer;
+    filter: $product-shadow;
+}
+
+#featuresImage {
+    background-image: url(../images/apartment_section.jpg);
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+#featuresSection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+#featuresSection p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+    padding: 13%;
+}
+
+#featuresTemperature {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10% 10% 0 0;
+}
+
+#featuresTime {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10% 10% 0 0;
+}
+
+#featuresWeather {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10% 10% 0 0;
+}
+
+#featuresSecurity {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10% 10% 0 0;
+}
+
+#featuresAlexa {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10% 10% 0 0;
+}
+
+.fas {
+    color: $dark-blue;
+    font-size: 3em;
+    text-align: center;
+}
+
+// security section
+
+#securitySection img {
+    width: 95%;
+    height: auto;
+}
+
+
+.mainTitles {
+    font-family: $font-titles;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 2em;
+    color: $dark-blue;
+    line-height: 1.5em;
+}
+
+.mainText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: black;
+    margin: 5%;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+// facial recognition
+
+#facialRecognitionSection img {
+    width: 51%;
+    height: auto;
+    transform: scaleX(-1);
+    margin-left: -8%;
+}
+
+.facialTitle {
+    font-family: "Varela Round", sans-serif;
+    margin-left: 52%;
+    margin-top: -68%;
+    font-size: 1.2em;
+    color: #2d36b3;
+    line-height: 1.5em;
+    z-index: -1;
+    position: absolute;
+}
+
+.facialText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: black;
+    line-height: 1.3em;
+    position: absolute;
+    margin-top: -49%;
+    margin-left: 52%;
+    margin-right: 2%;
+}
+
+.buyNowButtonBlue {
+    padding: .3em;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+    background-color: $dark-blue;
+    width: 24%;
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: $font-buttons;
+    font-weight: 400;
+    cursor: pointer;
+    filter: $product-shadow;
+}
+
+
+// alexa section
+
+#alexaSection {
+    background-color: $dark-blue;
+}
+
+#alexaIMG {
+    width: 60%;
+    height: auto;
+    filter: $product-shadow;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 20%;
+}
+
+.mainTitlesWhite {
+    font-family: $font-titles;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 1.5em;
+    color: white;
+    line-height: 1.5em;
+    padding-top: 55%;
+}
+
+.mainTextWhite {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: white;
+    margin: 5%;
+    line-height: 1.3em;
+    text-align: justify;
+    width: 62%;
+}
+
+#alexaLogo {
+    width: 75%;
+    height: auto;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+
+//capabilities section
+
+#capabilitiesIMG {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+#osLogos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#osLogos img {
+    padding: 5%;
+    width: 37%;
+}
+
+
