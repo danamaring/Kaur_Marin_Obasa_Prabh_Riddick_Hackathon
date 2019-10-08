@@ -11,7 +11,7 @@ header {
     background-color: $dark_blue;
 }
 #logoHeader img {
-    width: 23%;
+    width: 49%;
     height: auto;
     padding: 5%;
 }
@@ -296,6 +296,7 @@ header {
 #securitySection img {
     width: 95%;
     height: auto;
+    margin-top: 13%;
 }
 
 
@@ -324,6 +325,7 @@ header {
     height: auto;
     transform: scaleX(-1);
     margin-left: -8%;
+    margin-top: 14%;
 }
 
 .facialTitle {
@@ -384,7 +386,7 @@ header {
 .mainTitlesWhite {
     font-family: $font-titles;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 22%;
     font-size: 1.5em;
     color: white;
     line-height: 1.5em;
@@ -414,7 +416,7 @@ header {
 #capabilitiesIMG {
     width: 60%;
     margin-left: 20%;
-    margin-top: 15%;
+    margin-top: 18%;
 }
 
 #osLogos {
@@ -430,6 +432,7 @@ header {
 
 #orderTodayIMG {
     width: 100%;
+    margin-top: 11%;
 }
 
 .orderTodayTitle {
@@ -462,6 +465,7 @@ header {
 
 #mainFooter {
     background-color: black;
+    margin-top: 12%;
 }
 
 #navbarFooter {
@@ -477,7 +481,7 @@ header {
 }
 
 #logoFooter {
-    width: 23%;
+    width: 49%;
     margin-left: 9%;
     margin-top: 5%;
     cursor: pointer;
@@ -494,7 +498,7 @@ header {
 }
 
 #backToTop img {
-    width: 2.5em;
+    width: 2em;
     position: absolute;
     margin-top: -14%;
     margin-left: 80%;

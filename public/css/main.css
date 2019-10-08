@@ -5,7 +5,7 @@ header {
   background-color: #2d36b3; }
 
 #logoHeader img {
-  width: 23%;
+  width: 49%;
   height: auto;
   padding: 5%; }
 
@@ -242,7 +242,8 @@ header {
 
 #securitySection img {
   width: 95%;
-  height: auto; }
+  height: auto;
+  margin-top: 13%; }
 
 .mainTitles {
   font-family: "Varela Round", sans-serif;
@@ -264,7 +265,8 @@ header {
   width: 51%;
   height: auto;
   transform: scaleX(-1);
-  margin-left: -8%; }
+  margin-left: -8%;
+  margin-top: 14%; }
 
 .facialTitle {
   font-family: "Varela Round", sans-serif;
@@ -316,7 +318,7 @@ header {
 .mainTitlesWhite {
   font-family: "Varela Round", sans-serif;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 22%;
   font-size: 1.5em;
   color: white;
   line-height: 1.5em;
@@ -341,7 +343,7 @@ header {
 #capabilitiesIMG {
   width: 60%;
   margin-left: 20%;
-  margin-top: 15%; }
+  margin-top: 18%; }
 
 #osLogos {
   display: flex;
@@ -353,7 +355,8 @@ header {
   width: 37%; }
 
 #orderTodayIMG {
-  width: 100%; }
+  width: 100%;
+  margin-top: 11%; }
 
 .orderTodayTitle {
   font-family: "Varela Round", sans-serif;
@@ -380,7 +383,8 @@ header {
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44)); }
 
 #mainFooter {
-  background-color: black; }
+  background-color: black;
+  margin-top: 12%; }
 
 #navbarFooter {
   display: none; }
@@ -392,7 +396,7 @@ header {
   display: none; }
 
 #logoFooter {
-  width: 23%;
+  width: 49%;
   margin-left: 9%;
   margin-top: 5%;
   cursor: pointer; }
@@ -407,7 +411,7 @@ header {
   padding-bottom: 3%; }
 
 #backToTop img {
-  width: 2.5em;
+  width: 2em;
   position: absolute;
   margin-top: -14%;
   margin-left: 80%; }
