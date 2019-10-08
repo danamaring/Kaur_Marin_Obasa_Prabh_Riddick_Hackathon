@@ -335,6 +335,11 @@ header {
 
 // facial recognition
 
+#facialRecognitionSection {
+    margin-top: 40%;
+    margin-bottom: 60%;
+}
+
 #facialRecognitionSection img {
     width: 51%;
     height: auto;
@@ -478,6 +483,10 @@ header {
     border: none;
 }
 
+#boxes {
+    width: 70%;
+}
+
 // Main footer mobile
 
 #mainFooter {
@@ -589,6 +598,10 @@ header {
         width: 70%;
     }
 
+    #facialRecognitionSection {
+        margin-top: 45%;
+    }
+
     .facialTitle {
         font-size: 2.8em;
     }
@@ -645,6 +658,11 @@ header {
         font-size: 1em;
         width: 21%;
         padding: 0.5em;
+    }
+
+    #boxes{
+        margin-left: 15%;
+    width: 70%;
     }
 
     #backToTop img {
@@ -744,23 +762,25 @@ header {
       }
 
       #socialIcons_header {
+          padding-top: 6%;
         display: flex;
         flex-direction: row;
-        width: 40%;
+        width: 10%;
         margin-left: 81%;
         margin-top: -8%;
       }
 
       #productHero {
-        width: 53%;
-        margin-top: -13%;
+        width: 70%;
+        margin-top: 0;
         filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
         position: absolute;
-        margin-left: 34%;
+        margin-left: 24%;
     }
 
     #heroHeading {
         margin-top: 6%;
+        width: 30%;
         color: black;
         font-size: 3em;
     }
@@ -828,10 +848,9 @@ header {
     }
 
     #facialRecognitionSection img {
-        width: 40%;
         height: auto;
-        margin-left: 67%;
-        margin-top: 11%;
+        margin-left: 40%;
+        margin-top: 15%;
         transform: none;
     }
 
@@ -850,7 +869,7 @@ header {
         color: black;
         line-height: 1.3em;
         position: absolute;
-        margin-top: -20%;
+        margin-top: -30%;
         margin-left: 9%;
         margin-right: 61%;
     }
@@ -887,14 +906,19 @@ header {
     }
 
     #capabilitiesIMG {
-        width: 47%;
-        margin-left: 9%;
+        width: 70%;
+        margin-left: -10%;
         margin-top: 12%;
     }
 
     #osLogos {
         margin-left: 59%;
         margin-top: -10%;
+    }
+
+    #boxes {
+        width: 50%;
+        margin-top: 15%;
     }
 
     #orderTodayIMG {
@@ -1033,9 +1057,31 @@ header {
   }
   
   #infoSectionFooter {
+    font-family: Arial, Helvetica, sans-serif;
+      color: white;
       margin-top: 0;
       padding: 10% 5% 0 1%;
   }
+
+  #infoSectionFooter div {
+    font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+  }
+
+  #infoSectionFooter i {
+      width: 5%;
+    padding: 5;
+  }
+
+  .i.far.fa-clock{
+    width: 5% !important;
+    padding: 5 !important; 
+  }
+
+
 
 }
 
