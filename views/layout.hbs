@@ -32,7 +32,8 @@
 
         {{!-- logo header --}}
         <div id="logoHeader">
-            <img src="images/thermosecure_logo-v2_text_right-greyscale.svg" alt="houseCom logo">
+            <img id="monoLogo" src="images/thermosecure_logo-v2_text_right-greyscale.svg" alt="houseCom logo">
+            <img id="colourLogo" src="images/thermosecure_logo-v2_text_right.svg" alt="houseCom logo">
         </div>
 
         {{!-- menu starts --}}
@@ -89,7 +90,7 @@
         <section>
             <h1 class="hidden">Hero Section</h1>
 
-            {{!-- <img id="productHero" src="images/ecobee_provisional2.png" alt="ThermoSecurity device"> --}}
+            <img id="productHero" src="images/ecobee_provisional2.png" alt="ThermoSecurity device">
             <h1 id="heroHeading">HouseCom</h1> 
             <p id="heroDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, dolorem repellendus ab magni modi provident corrupti sapiente in quisquam rerum, ea exercitationem officiis mollitia! Expedita explicabo amet nemo repellendus rerum?</p>
             <button class="buyNowButton">BUY NOW</button>
@@ -204,25 +205,25 @@
         {{!-- info section footer --}}
         <section id="infoSectionFooter">
             <h1 class="hidden">Information section footer</h1>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <h1>138 Dundas St. London. ON</h1>
-            </div>
+                    <div id="addressF">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h1>138 Dundas St. London. ON</h1>
+                    </div>
 
-            <div>
-                <i class="fas fa-phone"></i>
-                <h1>519-647-5589</h1>
-            </div>
+                    <div id="phoneF">
+                        <i class="fas fa-phone"></i>
+                        <h1>519-647-5589</h1>
+                    </div>
 
-            <div>
-                <i class="fas fa-envelope"></i>
-                <h1>thermosecurity@housecom.com</h1>
-            </div>
+                    <div id="emailF">
+                        <i class="fas fa-envelope"></i>
+                        <h1>thermosecurity@housecom.com</h1>
+                    </div>
 
-            <div>
-                <i class="far fa-clock"></i>
-                <h1>Customer hours: 9:00 to 5:00</h1>
-            </div>
+                    <div id="hoursF">
+                        <i class="fas fa-clock"></i>
+                        <h1>Customer hours: 9:00 to 5:00</h1>
+                    </div>
         </section>
 
         {{!-- social media icons footer --}}
