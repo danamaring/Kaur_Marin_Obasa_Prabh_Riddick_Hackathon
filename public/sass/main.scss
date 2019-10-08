@@ -16,6 +16,10 @@ header {
     padding: 5%;
 }
 
+#colourLogo {
+    display: none;
+}
+
 // hamburger menu
 #button {
     background-image: url(../images/bars-solid.svg);
@@ -226,11 +230,13 @@ header {
     font-weight: 400;
     cursor: pointer;
     filter: $product-shadow;
+    border: none;
 }
 
 #featuresImage {
     background-image: url(../images/apartment_section_mobile.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 300px;
 }
@@ -374,6 +380,7 @@ header {
     font-weight: 400;
     cursor: pointer;
     filter: $product-shadow;
+    border: none;
 }
 
 
@@ -468,6 +475,7 @@ header {
     font-weight: 400;
     cursor: pointer;
     filter: $product-shadow;
+    border: none;
 }
 
 // Main footer mobile
@@ -663,6 +671,372 @@ header {
     #address {
         margin-top: 26%;
     }
+}
+
+//MediaQuery for desktop (1024px)
+@media screen and (min-width: 64em) {
+
+    header {
+        background: linear-gradient(90deg, white 50%, $dark-blue 50%);
+    }
+
+    #colourLogo {
+        display: block;
+        width: 25%;
+        height: auto;
+        padding: 4%;
+    }
+
+    #monoLogo {
+        display: none;
+    }
+    
+    #mainHeader {
+        display: flex;
+        margin-top: 5%;
+      }
+      
+      #button {
+        display: none;
+      }
+    
+      #burgerCon {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+    
+      #mainNav {
+        text-align: right;
+        font-size: 0.875em;
+        margin-left: auto;
+        background-color: transparent;
+      }
+    
+      #burgerMenu {
+        margin-top: -9%;
+        margin-right: 23%;
+      }
+    
+      #mainNav li {
+        display: inline;
+        margin-left: 20px;
+        border-bottom: none;
+      }
+    
+      #mainNav li a {
+        display: inline;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+         font-size: 0.8em;
+      }
+
+      #logoHeader img {
+        width: 25%;
+        height: auto;
+        padding: 4%;
+      }
+
+      #infoSectionHeader {
+          display: none;
+      }
+
+      #socialIcons_header {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        margin-left: 81%;
+        margin-top: -8%;
+      }
+
+      #productHero {
+        width: 53%;
+        margin-top: -13%;
+        filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.44));
+        position: absolute;
+        margin-left: 34%;
+    }
+
+    #heroHeading {
+        margin-top: 6%;
+        color: black;
+        font-size: 3em;
+    }
+
+    #heroDescription {
+        width: 30%;
+        color: black;
+    }
+
+    .buyNowButton {
+        width: 12%;
+        background-color: $dark-blue;
+        color: white;
+    }
+
+    #socialIcons_header img {
+        padding: 3%;
+    }
+
+    #heroDescription {
+        font-size: 0.8em;
+    }
+
+    #featuresImage {
+        background-image: url(../images/apartment_section.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    #featuresTemperature {
+        width: 22%;
+    }
+
+    #featuresTime {
+        width: 22%;
+    }
+
+    #featuresWeather {
+        width: 22%;
+    }
+
+    #featuresAlexa {
+        margin-left: 0;
+    }
+
+    #securitySection img {
+        width: 66%;
+        margin-top: 8%;
+    }
+
+    .mainTitles {
+        font-size: 3em;
+        position: absolute;
+        width: 40%;
+        margin-left: 60%;
+        margin-top: -41%;
+    }
+
+    .mainText {
+        font-size: 1em;
+        width: 30%;
+        margin-left: 61%;
+        position: absolute;
+        margin-top: -24%;
+    }
+
+    #facialRecognitionSection img {
+        width: 40%;
+        height: auto;
+        margin-left: 67%;
+        margin-top: 11%;
+        transform: none;
+    }
+
+    .facialTitle {
+        font-family: "Varela Round", sans-serif;
+        margin-left: 9%;
+        width: 36%;
+        margin-top: -40%;
+        color: #2d36b3;
+        line-height: 1.5em;
+        position: absolute;
+    }
+
+    .facialText {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        line-height: 1.3em;
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 9%;
+        margin-right: 61%;
+    }
+
+    #alexaIMG {
+        width: 52%;
+        margin-left: -1%;
+    }
+
+    .mainTitlesWhite {
+        font-family: "Varela Round", sans-serif;
+        margin-left: 46%;
+        color: white;
+        line-height: 1.5em;
+        padding-top: 12%;
+    }
+
+    .mainTextWhite {
+        margin-left: 47%;
+        width: 39%;
+        margin-top: 3%;
+    }
+
+    .buyNowButtonBlue {
+        margin-top: -10%;
+        width: 13%;
+    }
+
+    #alexaLogo {
+        width: 23%;
+        margin-top: -2%;
+        margin-left: 46%;
+        margin-bottom: 3%;
+    }
+
+    #capabilitiesIMG {
+        width: 47%;
+        margin-left: 9%;
+        margin-top: 12%;
+    }
+
+    #osLogos {
+        margin-left: 59%;
+        margin-top: -10%;
+    }
+
+    #orderTodayIMG {
+        width: 62%;
+        margin-top: 11%;
+        margin-left: 42%;
+    }
+
+    .orderTodayTitle {
+        font-size: 3em;
+        width: 56%;
+        margin-top: -42%;
+    }
+
+    .mainTextCenter {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 1em;
+        margin: 5%;
+        text-align: justify;
+        margin-left: 8%;
+        width: 36%;
+        margin-top: 4%;
+    }
+
+    .OrderBuyNowButton {
+        font-size: 1em;
+        width: 15%;
+        padding: 0.5em;
+        margin-left: 8%;
+        margin-top: 0%;
+    }
+
+    #mainFooter {
+        margin-top: 5%;
+    }
+
+    #logoFooter {
+        width: 29%;
+        margin-left: 6%;
+        margin-top: 4%;
+        cursor: pointer;
+    }
+
+    #backToTop  {
+        display: none;
+    }
+
+    #infoSectionFooter {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-left: 5%;
+        margin-top: 40%;
+    }
+
+    #infoSectionFooter {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        margin-left: 5%;
+        margin-top: 40%;
+    }
+  
+    #addressF {
+        display: flex;
+        flex-direction: row;
+        padding: 0 2% 0 2%;
+        margin-left: 3%;
+        margin-top: 0%;
+    }
+  
+    #addressF i {
+        font-size: 1.5em;
+    }
+  
+    #addressF h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        padding: 2%;
+    }
+  
+    #phoneF {
+      display: flex;
+      flex-direction: row;
+      padding: 0 2% 0 2%;
+      margin-left: 3%;
+  }
+  
+  #phoneF i {
+      font-size: 1.5em;
+  }
+  
+  #phoneF h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      padding: 2%;
+  }
+  
+  #emailF {
+      display: flex;
+      flex-direction: row;
+      padding: 0 2% 0 2%;
+      margin-left: 3%;
+  }
+  
+  #emailF i {
+      font-size: 1.5em;
+  }
+  
+  #emailF h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      padding: 2%;
+  }
+  
+  #hoursF {
+      display: flex;
+      flex-direction: row;
+      padding: 0 2% 0 2%;
+      margin-left: 3%;
+  }
+  
+  #hoursF i {
+      font-size: 1.5em;
+  }
+  
+  #hoursF h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      padding: 2%;
+  }
+  
+  #infoSectionFooter {
+      margin-top: 0;
+      padding: 10% 5% 0 1%;
+  }
+
 }
 
 
