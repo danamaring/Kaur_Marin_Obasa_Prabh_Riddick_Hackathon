@@ -43,7 +43,7 @@ header {
     
   #burgerCon.slideToggle {
     display: block;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
   }
     
   #mainNav button {
@@ -63,8 +63,9 @@ header {
     display: block;
     color: white;
     text-align: left;
-    margin: 5% 0;
+    margin: 5% 5% 0 5%;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 1em;
     text-decoration: none;
     cursor: pointer;
@@ -91,6 +92,100 @@ header {
   #socialMediaHeader img:first-child {
     margin-left: 12%;
   }
+
+  #socialIcons_header {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      padding: 5%;
+      margin-left: 62%;
+  }
+
+  #socialIcons_header img {
+      width: 1em;
+      padding: 6%;
+  }
+
+  #infoSectionFooter {
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      margin-left: 5%;
+      margin-top: 40%;
+  }
+
+  #address {
+      display: flex;
+      flex-direction: row;
+      padding: 2%;
+      margin-left: 3%;
+      margin-top: 40%;
+  }
+
+  #address i {
+      font-size: 1.5em;
+  }
+
+  #address h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      padding: 2%;
+  }
+
+  #phone {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-left: 3%;
+}
+
+#phone i {
+    font-size: 1.5em;
+}
+
+#phone h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-left: 3%;
+}
+
+#email i {
+    font-size: 1.5em;
+}
+
+#email h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%;
+}
+
+#hours {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin-left: 3%;
+}
+
+#hours i {
+    font-size: 1.5em;
+}
+
+#hours h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 2%;
+}
 
   // hero title and text
 
@@ -134,10 +229,10 @@ header {
 }
 
 #featuresImage {
-    background-image: url(../images/apartment_section.jpg);
+    background-image: url(../images/apartment_section_mobile.jpg);
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
 
 #featuresSection {
@@ -307,10 +402,11 @@ header {
 }
 
 #alexaLogo {
-    width: 75%;
+    width: 42%;
     height: auto;
     margin-left: 50%;
     margin-top: -5%;
+    margin-bottom: 5%;
 }
 
 //capabilities section
@@ -324,12 +420,86 @@ header {
 #osLogos {
     display: flex;
     flex-direction: row;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 #osLogos img {
     padding: 5%;
     width: 37%;
 }
+
+#orderTodayIMG {
+    width: 100%;
+}
+
+.orderTodayTitle {
+    font-family: $font-titles;
+    margin-top: -10%;
+    font-size: 2em;
+    color: $dark-blue;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.OrderBuyNowButton {
+    padding: .3em;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+    background-color: $dark-blue;
+    width: 24%;
+    margin-left: 38%;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    font-family: $font-buttons;
+    font-weight: 400;
+    cursor: pointer;
+    filter: $product-shadow;
+}
+
+// Main footer mobile
+
+#mainFooter {
+    background-color: black;
+}
+
+#navbarFooter {
+    display: none;
+}
+
+#infoSectionFooter {
+    display: none;
+}
+
+#socialMediaFooter {
+    display: none;
+}
+
+#logoFooter {
+    width: 23%;
+    margin-left: 9%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#footerCopyrights {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 0.2em;
+    color: white;
+    margin-top: 6%;
+    padding-bottom: 3%;
+}
+
+#backToTop img {
+    width: 2.5em;
+    position: absolute;
+    margin-top: -14%;
+    margin-left: 80%;
+}
+
+
 
 
