@@ -62,8 +62,8 @@
             <h1 class="hidden">Hero Section</h1>
 
             <img id="productHero" src="images/ecobee_provisional2.png" alt="ThermoSecurity device">
-            <h1 id="heroHeading">HouseCom</h1> 
-            <p id="heroDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, dolorem repellendus ab magni modi provident corrupti sapiente in quisquam rerum, ea exercitationem officiis mollitia! Expedita explicabo amet nemo repellendus rerum?</p>
+            <h1 id="heroHeading">{{TITLE}}</h1> 
+            <p id="heroDescription">{{SUB-TITLE}}</p>
             <button class="buyNowButton">BUY NOW</button>
         </section>
     </header>
@@ -115,16 +115,16 @@
     <section id="securitySection">  
         <h1 class="hidden">ThermoSecure Safe Feature</h1>
         <img src="images/keepThemSafe.png" alt="Happy family and home camera">
-        <h1 class="mainTitles">A smart way to keep them safe</h1>
-         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+        <h1 class="mainTitles">{{S_TITLE}}</h1>
+         <p class="mainText">{{S_BODY}}</p>
      </section>
 
     {{!-- facial recognition section --}}
     <section id="facialRecognitionSection">
         <h1 class="hidden">Facial Recognition Section</h1>
          <img src="images/ecobee_provisional.jpg" alt="ThremoSecurity Device">
-         <h1 class="facialTitle">ThermoSecurity Knows You</h1>
-         <p class="facialText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis?</p>
+         <h1 class="facialTitle">{{R_TITLE}}</h1>
+         <p class="facialText">{{R_BODY}}</p>
          <button class="buyNowButtonBlue">BUY NOW</button>
      </section>
 
@@ -132,8 +132,8 @@
     <section id="alexaSection">
         <h1 class="hidden">Alexa Section</h1>
          <img id="alexaIMG" src="images/amazon_echo.png" alt="Amazon Echo device">
-         <h1 class="mainTitlesWhite">The Smartphone of Smartphones</h1>
-         <p class="mainTextWhite">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error </p>
+         <h1 class="mainTitlesWhite">{{A_TITLE}}</h1>
+         <p class="mainTextWhite">{{A_BODY}}</p>
          <img id="alexaLogo" src="images/logo_alexaAmazon.png" alt="Alexa Amazon logo">
      </section>
 
@@ -141,8 +141,8 @@
     <section>
         <h1 class="hidden">Mobile capabilities section</h1>
          <img id="capabilitiesIMG" src="images/phone_mockup_provisional.png" alt="Phone mockup">
-         <h1 class="mainTitles">Mobile Capabilities</h1>
-         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+         <h1 class="mainTitles">{{C_TITLE}}</h1>
+         <p class="mainText">{{C_BODY}}</p>
          <div id="osLogos">
              <img src="images/android_logo.png" alt="Android Logo">
              <img src="images/ios_logo.png" alt="IOS Logo">
@@ -153,8 +153,8 @@
     <section>
         <h1 class="hidden">Order ThermoSecure today section</h1>
          <img src="images/boxes_mockup_provisional.png" alt="Packaging mockup">
-         <h1 class="mainTitles">Order ThermoSecure today</h1>
-         <p class="mainText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quaerat corporis doloremque veniam perspiciatis laudantium modi unde error incidunt quas iure, repellendus alias sed, eaque eos laborum adipisci? Libero, accusamus?</p>
+         <h1 class="mainTitles">{{P_TITLE}}</h1>
+         <p class="mainText">{{P_BODY}}</p>
         <button class="buyNowButton">BUY NOW</button>
      </section>
 
@@ -178,22 +178,22 @@
             <h1 class="hidden">Information section footer</h1>
             <div>
                 <i class="fas fa-map-marker-alt"></i>
-                <h1>138 Dundas St. London. ON</h1>
+                <h1>{{ADDRESS}}</h1>
             </div>
 
             <div>
                 <i class="fas fa-phone"></i>
-                <h1>519-647-5589</h1>
+                <h1>{{PHONE}}</h1>
             </div>
 
             <div>
                 <i class="fas fa-envelope"></i>
-                <h1>thermosecurity@housecom.com</h1>
+                <h1>{{EMAIL}}</h1>
             </div>
 
             <div>
                 <i class="far fa-clock"></i>
-                <h1>Customer hours: 9:00 to 5:00</h1>
+                <h1>{{WORKING_HOURS}}</h1>
             </div>
         </section>
 
@@ -206,7 +206,7 @@
 
         {{!-- copyrights footer --}}
         <div id="footerCopyrights">
-            <h1>Copyrights c Copyrights</h1>
+            <h1>{{COPYRIGHT}}</h1>
         </div>
     </footer>
 

@@ -26,25 +26,14 @@ app.get('/', (req, res) => {
 
   //res.sendFile(path.join(__dirname + '/views/index.html'));
 
-  res.render('home', { message: "hi there!", anothermessage: "This is easy!"} );
-  //this builds localhost:3000/views/index.html
-})
+//--DB STUFF STARTS HERE
 
-// CONTACT 
-
-app.get('/contact', (req, res) => {
-  console.log('at the contact route');
-  res.render('contact', { message: "hello there?!"});
-})
-
-//----DB STUFF STARTS
-app.get('/users', (req, res) => {
   sql.getConnection((err, connection) => {
     if (err) {
       return console.log(err.message);
     }
 
-    let query = `SELECT * FROM tbl_default`;
+    let query = `SELECT * FROM tbl_alexa, tbl_capabilities, tbl_features, tbl_footer, tbl_header, tbl_packaging, tbl_recognition, tbl_security`;
 
     sql.query(query, (err, rows) => {
       connection.release();
@@ -53,16 +42,11 @@ app.get('/users', (req, res) => {
 
       console.log(rows);
 
-      res.render('user', rows[0])
+      res.render('home', rows[0])
     })
   })
 })
 //----DB STUFF ENDS
-
-app.get('/portfolio', (req, res) => {
-  console.log('at the portfolio route');
-  res.send('on the portfolio page!');
-})
 
 
 app.listen(port, () => {
